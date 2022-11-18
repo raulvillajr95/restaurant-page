@@ -43,7 +43,6 @@ function tabButtons() {
     home()
   })
   menuBtn.addEventListener('click', () => {
-
     clearPage()
     menu()
   })
@@ -67,5 +66,4 @@ function clearPage() {
 
 tabButtons()
 
-contact()
-// home()
+home()
