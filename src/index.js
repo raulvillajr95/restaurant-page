@@ -13,15 +13,30 @@ function tabButtons() {
   menuBtn.textContent = 'Menu';
   contactBtn.textContent = 'Contact';
 
+  homeBtn.addEventListener('click', () => {
+    clearPage()
+    home()
+  })
+  menuBtn.addEventListener('click', () => {
+   clearPage()
+   menu()
+  })
+  contactBtn.addEventListener('click', () => {
+    clearPage()
+    contact()
+  })
+
   content.appendChild(homeBtn)
   content.appendChild(menuBtn)
   content.appendChild(contactBtn)
+}
 
-  return content
+function clearPage() {
+  for (let i = content.children.length - 1; i > 2; i--) {
+    content.removeChild(content.children[i])
+  }
 }
 
 tabButtons()
 
 home()
-menu()
-contact()

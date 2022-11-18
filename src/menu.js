@@ -21,8 +21,6 @@ function menu() {
   li3.textContent = "Chick Milkshake"
   ul.appendChild(li3)
   content.appendChild(ul)
-
-  return content
 }
 
 export {menu};

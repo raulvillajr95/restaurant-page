@@ -13,8 +13,6 @@ function home() {
   content.appendChild(img)
   content.appendChild(h1)
   content.appendChild(p)
-
-  return content
 }
 
 export {home};

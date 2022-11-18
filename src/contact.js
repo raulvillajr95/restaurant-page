@@ -18,8 +18,6 @@ function contact() {
   li2.textContent = "Fax: (800) 454 - 4545"
   ul.appendChild(li2)
   content.appendChild(ul)
-
-  return content
 }
 
 export {contact};
